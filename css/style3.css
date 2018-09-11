@@ -1,0 +1,42 @@
+/*body{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+*/
+#gallery{
+/*	height: 100%;*/
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#gallery .photos img{
+height: 350px;
+width: 100%;
+position: absolute;
+left: 0;
+opacity: 0;
+transition: opacity 2s;
+}
+
+#gallery .photos{
+	position: relative;
+	height: auto;
+}
+
+#gallery .photos img:first-child {
+	/*display: block;*/
+}
+
+#gallery .photos p{
+	position: absolute;
+	top: 500px;
+	left: 10px;
+	background-color: lightblue;
+}
+
+#gallery .photos img.showed{
+	opacity: 1;
+}
